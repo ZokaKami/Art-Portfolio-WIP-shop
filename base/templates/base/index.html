@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/78cfd3beb4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+
+
+  </head>
+  <body>
+
+
+<div class="site-wrapper">
+    <div class="header">
+          <div class="container-lg">
+            <div class="row row-middle">
+              <div class="site-header-col-left">
+                <div class="site-title title-font">
+                    <a href="#">Oraen Naealsejsak</a>
+                </div>
+                <div class="sub-title  visible-desktop">
+                    Character Designer // Illustrator
+                </div>
+
+              </div>
+              <div class="site-header-col-right text-right">
+
+                <div class="visible-desktop">
+                  <div class="header-nav">
+                    <div class="header-nav-item">
+                      <a href="/index">Home</a>
+                    </div>
+                    <div class="header-nav-item">
+                      <a href="/portfolio">Portfolio</a>
+                    </div>
+                    <div class="header-nav-item">
+                      <a href="/about">About </a>
+                    </div>
+                    <div class="header-nav-item">
+                      <a href="/contacts">Contacts</a>
+                    </div>
+                    <div class="header-nav-item">
+                      <a href="/socials">Socials</a>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+    </div>
+    <ul id="slides">
+      <li class="slide showing" style="background-image: url('https://cdna.artstation.com/p/assets/images/images/032/735/914/large/zeljka-dobras-among-the-blazes.jpg?1607333137');"></li>
+      <li class="slide" style="background-image: url('https://cdna.artstation.com/p/assets/images/images/032/746/092/large/zeljka-dobras-sketches5.jpg?1607357714');"></li>
+      <li class="slide" style="background-image: url('https://cdna.artstation.com/p/assets/images/images/032/735/914/large/zeljka-dobras-among-the-blazes.jpg?1607333137');"></li>
+
+    </ul>
+
+    <div class="footer">
+        <div class="container-lg">
+            <a href="#" class="fa-brands fa-artstation "></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+
+        </div>
+    </div>
+
+</div>
+  </body>
+
+<script type="text/javascript">
+function slides(duration) {
+var duration = duration;
+var slides = document.querySelectorAll("#slides .slide");
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide, duration);
+
+function nextSlide(){
+slides[currentSlide].className = 'slide';
+currentSlide = (currentSlide+1)%slides.length;
+slides[currentSlide].className = 'slide showing';
+}
+
+// Show the first slide
+slides[currentSlide].className = 'slide showing';
+}
+slides(5000);
+  </script>
+
+</html>

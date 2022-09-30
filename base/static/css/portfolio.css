@@ -1,0 +1,138 @@
+.site-wrapper{
+  height:initial;
+  flex:1 1 auto;
+  background-color: black;
+}
+
+.header{
+  background-color: black;
+  padding: 1.7rem;
+  position: relative;
+}
+.container-lg{
+  padding-left: 0;
+  padding-right: 0;
+}
+.row-middle{
+  align-items: center;
+}
+.row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.title-font{
+    font-size:2rem;
+    font-weight: 700;
+    color:white;
+  }
+a{
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  color: #6ED3F5;
+}
+
+.visible-desktop{
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+}
+.text-right{
+  text-align: right;
+}
+.site-header-col-left{
+  max-width: 45%;
+  -webkit-box-flex: 1;
+  flex:1 1 45%;
+}
+.site-header-col-right{
+  max-width: 55%;
+  -webkit-box-flex: 1;
+  flex:1 1 55%;
+}
+
+.header-nav-item{
+
+  display: inline-block;
+  padding-right: 1.875rem;
+  vertical-align: top;
+}
+.album-grid{
+  padding-right:0.0625rem;
+}
+.album-grid .col-desktop-3{
+
+  max-width: 20%;
+  flex-basis:20%;
+}
+.album-grid-item {
+  width: 100%;
+  position: relative;
+  padding-left:0.0625rem;
+  padding-top:0.0625rem;
+}
+
+.img-fluid{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.footer{
+  background-color: #252525;
+  z-index: 10;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+}
+.fa{
+  padding: 5px;
+  font-size: 25px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-brands{
+  padding: 5px;
+  font-size: 25px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.footer a{
+  margin-left:8px;
+}
+.fa-instagram{
+  background: #d6249f;
+ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+ box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  }
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-artstation{
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin{
+  background: rgba(10,102,194);;
+  color: white;
+}
