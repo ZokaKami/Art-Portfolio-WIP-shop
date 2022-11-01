@@ -8,3 +8,11 @@ def index(request):
 
 def portfolio(request):
     return render(request, 'base/portfolio.html')
+
+
+def about(request):
+    return render(request, 'base/about.html')
+
+
+def shop(request):
+    return render(request, 'base/shop.html')

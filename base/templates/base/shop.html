@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/78cfd3beb4.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/shop.css' %}">
+
+
+</head>
+<body>
+<div class="site-wrapper">
+  <div class="header">
+
+        <div class="container-lg">
+          <div class="row row-middle">
+            <div class="site-header-col-left">
+              <div class="site-title title-font">
+                  <a href="#">Oraen Naealsejsak</a>
+              </div>
+              <div class="sub-title  visible-desktop">
+                 Character Designer // Illustrator
+              </div>
+
+            </div>
+            <div class="site-header-col-right text-right">
+
+              <div class="visible-desktop">
+                <div class="header-nav">
+                  <div class="header-nav-item">
+                    <a href="/index">Home</a>
+                  </div>
+                  <div class="header-nav-item">
+                    <a href="/portfolio">Portfolio</a>
+                  </div>
+                  <div class="header-nav-item">
+                    <a href="/about">About </a>
+                  </div>
+                  <div class="header-nav-item">
+                    <a href="mailto: ruffy92@live.com">Contact</a>
+                  </div>
+                  <div class="header-nav-item">
+                    <a href="/shop">Shop</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+  </div>
+<div class="store-container">
+
+ <div class="products">
+
+   <div class="products-row">
+     <div class="product-row-button">
+       <button type="button" class="product-button" name="button">Cart</button>
+     </div>
+     <a href="#" class="product-item-link"><div class="products-item">
+
+       {% load static %}
+       <img src="{% static 'images/placeholder.png' %}" class="product-image" alt="My image">
+       <p>Item bundle placeholder text</p>
+     </div></a>
+     </div>
+ <div class="products-row">
+   <div class="product-row-button">
+     <button type="button" class="product-button" name="button">Cart</button>
+   </div>
+     <a href="#" class="product-item-link"><div class="products-item">
+
+       {% load static %}
+
+       <img src="{% static 'images/placeholder.png' %}" class="product-image" alt="My image">
+       <p>Item bundle placeholder text</p>
+
+     </div></a>
+   </div>
+
+   <div class="products-row">
+     <div class="product-row-button">
+       <button type="button" class="product-button" name="button">Cart</button>
+     </div>
+     <a href="#" class="product-item-link"><div class="products-item">
+
+       {% load static %}
+       <img src="{% static 'images/placeholder.png' %}" class="product-image" alt="My image">
+       <p>Item bundle placeholder text</p>
+     </div></a>
+     </div>
+      <div class="products-row">
+        <div class="product-row-button">
+          <button type="button" class="product-button" name="button">Cart</button>
+        </div>
+     <a href="/index" class="product-item-link"><div class="products-item">
+
+       {% load static %}
+       <img src="{% static 'images/placeholder.png' %}" class="product-image" alt="My image">
+       <p>Item bundle placeholder text</p>
+     </div></a>
+
+ </div>
+
+</div>
+
+</div>
+
+
+</div>
+<footer>
+    <div class="container-lg">
+        <a href="#" class="fa-brands fa-artstation "></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+
+    </div>
+</footer>
+</html>

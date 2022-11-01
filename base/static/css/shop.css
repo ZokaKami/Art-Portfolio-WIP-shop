@@ -1,29 +1,22 @@
 body{
+  min-height: 100vh;
   display: flex;
-  flex:1 1 100vw;
-  max-width: 100%;
+  flex-direction: column;
+  background-color: #171717;
+  color: #171717;
 }
 .site-wrapper{
-  flex:1 1 auto;
-  height: auto;
+  height: initial;
+
+
+  flex: 1 1 auto;
 }
 
 .header{
-  background-color: rgba(25,25,25,0.6);
+  background-color: #0a0a0a;
   padding: 1.7rem;
-  position: absolute;
-  z-index: 10;
-  width: 100%;
+  position: relative;
 }
-.footer{
-  background-color: #252525;
-  z-index: 10;
-  width:100%;
-  position: absolute;
-  bottom: 0;
-  padding: 1.5rem;
-}
-
 .container-lg{
   padding-left: 0;
   padding-right: 0;
@@ -31,6 +24,8 @@ body{
 .row-middle{
   align-items: center;
 }
+
+.
 .row{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +55,12 @@ a:visited {
 a:hover {
   color: #6ED3F5;
 }
+.active a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.25s cubic-bezier(0.45, 0.3, 0.15, 0.95);
+  transition: color 0.25s cubic-bezier(0.45, 0.3, 0.15, 0.95);
+}
 
 .visible-desktop{
   font-size: 1rem;
@@ -87,22 +88,94 @@ a:hover {
   padding-right: 1.875rem;
   vertical-align: top;
 }
-.slide{
-  position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-opacity: 0;
-z-index: 1;
-transition: opacity 1s;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-}
-.showing{
 
-opacity: 1;
+.store-container{
+  display:flex;
+  max-width: 100rem;
+  padding: 0 2.5rem;
+  color: white;
+  font-size: 1rem;
+  margin: auto;
+  box-sizing: border-box;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top:1.25rem;
+  max-width: 83%;
+  flex-basis: 83%;
+  box-sizing: border-box;
+  margin-left:10%;
+
+}
+p{
+  font-size: 1.5rem;
+}
+
+.products-row{
+position: relative;
+width: calc(100%/3);
+margin-left:5%;
+}
+.product-item-link{
+
+min-height: 100%;
+display: flex;
+flex-direction: column;
+
+
+}
+.product-item-link:hover{
+ text-decoration: none;
+ color:white;
+ opacity: 0.5;
+ transition:0.5s;
+
+}
+.products-row:hover .product-row-button{
+  transition:0.5s;
+  visibility: visible;
+  opacity: 1;
+}
+.product-row-button{
+  display: block;
+  z-index: 3;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+
+}
+
+.product-button{
+  min-width:6rem;
+  padding: 20px 42px;
+   box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+   line-height: 1.25;
+   background: #8397fd  ;
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
+   letter-spacing: .08em;
+   transition: background-color .6s ease;
+   overflow: hidden;
+   border:none;
+
+}
+
+.product-image{
+  width: 100%;
+}
+footer{
+  background-color: #252525;
+  z-index: 10;
+  width:100%;
+  padding: 1.5rem;
+  margin-top: auto;
+  bottom: 0;
 }
 .fa{
   padding: 5px;
@@ -120,7 +193,7 @@ opacity: 1;
   text-decoration: none;
   border-radius: 50%;
 }
-.footer a{
+footer a{
   margin-left:8px;
 }
 .fa-instagram{
